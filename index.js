@@ -1,6 +1,9 @@
+require('dotenv').config();
+
 const server = require('./server.js');
 
-const PORT = process.env.PORT || 5000;
+// handled by dotenv or heroku
+const PORT = process.env.PORT;
 
 server.listen(PORT, () => {
   console.log(`\n*** Server Running on http://localhost:${PORT} ***\n`);
