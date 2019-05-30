@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { TiRefreshOutline as RefreshIcon } from 'react-icons/ti';
 import './App.css';
 
 class App extends React.Component {
@@ -7,7 +8,6 @@ class App extends React.Component {
     showingDadJokes: false,
     showingDevJokes: false,
     showingAllJokes: true,
-    currentJoke: null,
     setup: null,
     punchline: null,
   };
@@ -119,7 +119,11 @@ class App extends React.Component {
         <div className="App__joke">
           <p className="App__joke__setup">{this.state.setup}</p>
           <p className="App__joke__punchline">{this.state.punchline}</p>
-          <button onClick={this.refreshJoke}>New Joke</button>
+          <RefreshIcon
+            className="App__refresh-icon"
+            onClick={this.refreshJoke}
+            size={72}
+          />
         </div>
       </div>
     );

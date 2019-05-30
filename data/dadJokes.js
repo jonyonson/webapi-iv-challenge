@@ -33,7 +33,7 @@ module.exports = [
     punchline: 'It was sole destroying.',
   },
   {
-    setup: 'A furniture store keeps calling me.',
+    setup: 'The furniture store keeps calling me.',
     punchline: 'All I wanted was a one night stand.',
   },
 ];
