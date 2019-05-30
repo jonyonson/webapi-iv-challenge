@@ -8,9 +8,9 @@ const dadJokes = require('./data/dadJokes.js');
 const devJokes = require('./data/devJokes.js');
 
 // Middleware
-// server.use(helmet());
+server.use(helmet());
 server.use(express.json());
-// server.use(cors({ origin: 'http://localhost:3000' }));
+server.use(cors({ origin: 'http://localhost:3000' }));
 
 server.get('/', (req, res) => {
   res.send('<h2>Jokes API</h2>');
