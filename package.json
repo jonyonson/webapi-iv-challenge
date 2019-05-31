@@ -1,0 +1,21 @@
+{
+  "name": "webapi-iv-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jonyonson/webapi-iv-challenge.git",
+  "author": "Jonathan Taylor <jonyonson@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
